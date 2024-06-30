@@ -151,15 +151,15 @@ body {
     justify-content: center;
 }
 #Events{
-    width: 100%;
-    height: 70vh;
-    margin: 10px 10px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+    width:100%;
+    height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr repeat(200px,6);
+    grid-template-columns:1fr repeat(200px,6);
+    /* background-color: red; */
 }
-.image_item{
+/* .image_item{
      margin: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -167,10 +167,23 @@ body {
     width: 500px;
     height: 80%;
     text-align: center;
+} */
+#Football {
+    grid-area: 1/1/5/3 ;
+}
+#Badminton{
+    grid-area: 1/4/5/6;
+}
+#Basketball{
+    grid-area: 1/3/3/4;
+}
+#Tennis{
+    grid-area: 3/3/5/4;
 }
 .image_item img {
-    width: 100%;
-    height: 100%;
+    margin: auto ;
+    width: 95%;
+    height: 95%;
     border-radius: 4px;
     z-index: -1;
 }
@@ -186,7 +199,6 @@ body {
 .image_item:hover .hover_content{
     display: block;
     opacity: 1;
-    
 }
 .image_item:hover{
     background-color: black;

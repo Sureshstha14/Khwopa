@@ -39,7 +39,7 @@ const eventList = [
 function showImg(){
     const Events = document.getElementById('Events');
     Events.innerHTML = eventList.map(item =>
-        `<div class="image_item">
+        `<div class="image_item" id='${item.title}'>
         <img src="${item.img}" alt="${item.title}">
         <div class="hover_content">
             ${item.title}
