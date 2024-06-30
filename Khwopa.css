@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    
+}
+
+.logo img {
+    height: 50px; /* Adjust the height as needed */
+    margin-right: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+.dropDown{
+    display: none;
+}
+.dropDown ul{
+    list-style: none;
+
+}
+.nav-links li:hover .dropDown{
+    display: block;
+}
+.dropArrow::after{
+    content: '\25BC';
+    font-size: 0.8em;
+    margin-left: 5px;
+}
+.container{
+    position: relative;
+    background-image: url('C:/Users/admin/Desktop/newReact/myproject/src/Websites/Khwopa/Images/collage.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+    color: white;
+}
+.intro {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);    
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+}
+.intro h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.container1{
+    height: 230vh;
+    width: 100%;
+    color: rgb(206, 156, 91);
+    /* background-color: green; */
+}
+.container1 h2{
+    font-size: 40px;
+    margin: 30px 10px;
+    text-align: center;
+}
+.Department img{
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+ .Faculty{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.Faculty .Department{
+    height: 80vh;
+    width: 30%;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px saddlebrown;
+    margin: 10px 10px;
+    text-align: center;
+    padding:10px 10px;
+    /* padding: 10px 10px; */
+}
+.Department:hover img{
+    transform: scale(1.06,1.06);
+    transition: transform 0.3s;
+}
+.Department a{
+    font-size: 40px;
+    font-weight: 200;
+    color:rgb(45, 41, 41)
+}
+.Department a{
+    text-decoration: none;
+    font-size: 25px;
+    margin: 10px 10px;
+    color: rgb(50, 57, 30);
+}
+.Department a:hover{
+    color: rgb(64, 186, 186);
+    transform: scaleX(1.5);
+    transition: color 0.3s;
+    text-decoration: underline;
+}
+
+.eventTitle{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Events{
+    width: 100%;
+    height: 70vh;
+    margin: 10px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.image_item{
+     margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    width: 500px;
+    height: 80%;
+    text-align: center;
+}
+.image_item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    z-index: -1;
+}
+.hover_content{
+    /* z-index: 10; */
+    position: relative;
+    top: -60%;
+    font-size: 40px;
+    color: #0d82dc;
+    display: none;
+    opacity: 0;
+}
+.image_item:hover .hover_content{
+    display: block;
+    opacity: 1;
+    
+}
+.image_item:hover{
+    background-color: black;
+    transition: all 0.5s ease;
+}
+.image_item:hover img{
+    transform: translateX(-1500px);
+}
+.image_item h3 {
+    margin: 10px 0 0;
+}
+.container2{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(97, 174, 219);
+}
+.collage_moto{
+    width: 100%;
+    height: 50%;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    /* clip-path: polygon(0 47%, 100% 49%, 100% 0, 0 98%); */
+}
+.collage_moto .first_content{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    height: 100%;
+    z-index: 10;
+    float: right;
+    /* background-color:aqua ; */
+}
